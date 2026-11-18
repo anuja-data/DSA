@@ -21,7 +21,7 @@ class LQueue:
     def print(self):
         temp=self.front
         while temp:
-            print(temp.data,end="--")
+            print(temp.data,end=" ")
             temp=temp.next
 que=LQueue()
 que.enqueue(Node(23))

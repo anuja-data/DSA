@@ -6,6 +6,7 @@ class Node:
 class BST:
     def __init__(self):
         self.root=None
+        self.count=0
     def insert (self,new_node):
         if self.root is None: #creating the root node
             self.root= new_node
@@ -26,8 +27,8 @@ class BST:
                     else:
                         temp=temp.right
 
-def preorder(temp): #recursive
-    if temp is None:
+def preorder(temp,rt): #recursive
+    if rt is None:
         return
     else:
         print(temp.data,end=" ")
